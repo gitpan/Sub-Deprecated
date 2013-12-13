@@ -1,6 +1,6 @@
 package Test::Sub::Deprecated;
 {
-  $Test::Sub::Deprecated::VERSION = '0.003';
+  $Test::Sub::Deprecated::VERSION = '0.003001';
 }
 use base qw(Sub::Deprecated);
 use vars qw($version $message $scalar @list);

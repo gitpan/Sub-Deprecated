@@ -20,13 +20,12 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Sub::Deprecated",
   "PREREQ_PM" => {
-    "Attribute::Handlers" => 0,
-    "Sub::Install" => 0
+    "Attribute::Handlers" => 0
   },
   "TEST_REQUIRES" => {
     "Test::More" => 0
   },
-  "VERSION" => "0.003",
+  "VERSION" => "0.003001",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -35,7 +34,6 @@ my %WriteMakefileArgs = (
 
 my %FallbackPrereqs = (
   "Attribute::Handlers" => 0,
-  "Sub::Install" => 0,
   "Test::More" => 0
 );
 

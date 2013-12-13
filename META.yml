@@ -15,9 +15,8 @@ meta-spec:
 name: Sub-Deprecated
 requires:
   Attribute::Handlers: 0
-  Sub::Install: 0
 resources:
   bugtracker: https://github.com/nnutter/Sub-Deprecated/issues
   homepage: http://search.cpan.org/dist/Sub-Deprecated/
   repository: git://github.com/nnutter/Sub-Deprecated.git
-version: 0.003
+version: 0.003001
