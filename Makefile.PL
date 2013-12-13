@@ -9,7 +9,7 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Define a Deprecated attribute that can be used to decorate deprecated subroutines.",
+  "ABSTRACT" => "Warn when deprecated subroutines are used",
   "AUTHOR" => "Nathan Nutter <nnutter\@genome.wustl.edu>",
   "BUILD_REQUIRES" => {},
   "CONFIGURE_REQUIRES" => {
@@ -25,7 +25,7 @@ my %WriteMakefileArgs = (
   "TEST_REQUIRES" => {
     "Test::More" => 0
   },
-  "VERSION" => "0.003001",
+  "VERSION" => "0.003002",
   "test" => {
     "TESTS" => "t/*.t"
   }

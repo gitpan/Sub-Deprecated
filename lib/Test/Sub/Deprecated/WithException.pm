@@ -1,6 +1,6 @@
 package Test::Sub::Deprecated::WithException;
 {
-  $Test::Sub::Deprecated::WithException::VERSION = '0.003001';
+  $Test::Sub::Deprecated::WithException::VERSION = '0.003002';
 }
 use base qw(Sub::Deprecated);
 

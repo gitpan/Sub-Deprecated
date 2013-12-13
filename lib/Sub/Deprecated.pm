@@ -3,7 +3,7 @@ use warnings;
 
 package Sub::Deprecated;
 {
-  $Sub::Deprecated::VERSION = '0.003001';
+  $Sub::Deprecated::VERSION = '0.003002';
 }
 
 use Attribute::Handlers;
@@ -53,7 +53,7 @@ Sub::Deprecated - Warn when deprecated subroutines are used
 
 =head1 VERSION
 
-version 0.003001
+version 0.003002
 
 =head1 SYNOPSIS
 
@@ -74,20 +74,24 @@ Provides a C<:Deprecated> attribute for subroutines that can be used to
 decorate deprecated subroutines.  The decorator produces a warning using the
 supplied version string and optional message.
 
-=head1 SEE ALSO
-
 Inspired by L<Sub::Private|Sub::Private> which provides a C<:Private> attribute
 for subroutines.
+
+=head1 SEE ALSO
+
+L<Sub::Private|Sub::Private>
 
 =head1 AUTHOR
 
 Nathaniel G. Nutter <nnutter@cpan.org>
 
-=head1 COPYRIGHT AND LICENSE
+=head1 COPYRIGHT
 
-This software is copyright (c) 2013 by Nathaniel G. Nutter.
+Copyright 2013 - Nathaniel G. Nutter
 
-This is free software; you can redistribute it and/or modify it under the same
-terms as the Perl 5 programming language system itself.
+=head1 LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
 
 =cut

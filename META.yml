@@ -1,5 +1,5 @@
 ---
-abstract: 'Define a Deprecated attribute that can be used to decorate deprecated subroutines.'
+abstract: 'Warn when deprecated subroutines are used'
 author:
   - 'Nathan Nutter <nnutter@genome.wustl.edu>'
 build_requires:
@@ -19,4 +19,4 @@ resources:
   bugtracker: https://github.com/nnutter/Sub-Deprecated/issues
   homepage: http://search.cpan.org/dist/Sub-Deprecated/
   repository: git://github.com/nnutter/Sub-Deprecated.git
-version: 0.003001
+version: 0.003002
