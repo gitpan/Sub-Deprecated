@@ -1,0 +1,13 @@
+
+
+This archive contains the distribution Sub-Deprecated,
+version 0.003:
+
+  Define a Deprecated attribute that can be used to decorate deprecated subroutines.
+
+This software is copyright (c) 2013 by The Genome Institute at Washington University in St. Louis.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+
