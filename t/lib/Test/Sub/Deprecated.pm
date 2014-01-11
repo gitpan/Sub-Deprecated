@@ -1,14 +1,16 @@
+use strict;
+use warnings;
+
 package Test::Sub::Deprecated;
-{
-  $Test::Sub::Deprecated::VERSION = '0.003002';
-}
 use base qw(Sub::Deprecated);
 use vars qw($version $message $scalar @list);
 
-$version = 1.0.5;
-$message = 'Use something not deprecated instead.';
-$scalar = 'MyScalar';
-@list = ('My', 'List');
+BEGIN {
+    $version = '1.0.5';
+    $message = 'Use something not deprecated instead.';
+    $scalar = 'MyScalar';
+    @list = ('My', 'List');
+};
 
 sub something {
     if (wantarray) {
@@ -30,6 +32,8 @@ sub caller : Deprecated($version) {
     return caller;
 }
 
-sub args_passthrough : Deprecated($cersion) {
+sub args_passthrough : Deprecated($version) {
     return @_;
 }
+
+1;

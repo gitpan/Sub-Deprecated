@@ -1,14 +1,14 @@
+package Sub::Deprecated;
+
+use 5.008005;
 use strict;
 use warnings;
 
-package Sub::Deprecated;
-{
-  $Sub::Deprecated::VERSION = '0.003002';
-}
+our $VERSION = "0.04";
 
 use Attribute::Handlers;
 
-sub Deprecated : ATTR {
+sub Deprecated : ATTR(CODE,BEGIN) {
     my ($package, $symbol, $referent, $attr, $data, $phase, $file, $line) = @_;
 
     my $die = sub {
@@ -29,7 +29,7 @@ sub Deprecated : ATTR {
     no warnings 'redefine';
     *{$symbol} = sub {
         my $warning = sprintf(
-            'WARNING: %s::%s deprecated as of v%vd.',
+            'WARNING: %s::%s deprecated as of %s.',
             $package, $name, $deprecated_version,
         );
         if (defined $message && $message) {
@@ -50,10 +50,6 @@ __END__
 =head1 NAME
 
 Sub::Deprecated - Warn when deprecated subroutines are used
-
-=head1 VERSION
-
-version 0.003002
 
 =head1 SYNOPSIS
 
